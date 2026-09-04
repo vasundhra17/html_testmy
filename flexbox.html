@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Direction</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            margin-right: 5px;
+        }
+        #heading{text-align: center; margin: 20px;}
+        #container {
+            height: 450px;
+            width: 550px;
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+            align-items: center;
+            
+        }
+        #box1{ background-color: aqua;order:1;}
+        #box2{ background-color: yellow; align-self: flex-start;order:2;}
+        #box3{ background-color: red;
+        flex-shrink: 4;order:4;}
+        #box4{ background-color: blue; order:3;}
+        #box5{ background-color: green;order:5;}
+        #box6{ background-color: purple;order:6;}
+        #box7{ background-color: orange;order:7;}
+
+    </style>
+</head>
+<body>
+    <h1 id="heading">Flexbox Container</h1>
+    <div id="container">
+        <div id="box1" class="box">Flex Item 1</div>
+        <div id="box2" class="box">Flex Item 2</div>   
+        <div id="box3" class="box">Flex Item 3</div>
+        <div id="box4" class="box">Flex Item 4</div>
+        <div id="box5" class="box">Flex Item 5</div>
+        <div id="box6" class="box">Flex Item 6</div>
+        <div id="box7" class="box">Flex Item 7</div>
+    </div>
+</body>
+</html>    
+
+
+
+
