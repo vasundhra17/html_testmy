@@ -1,0 +1,22 @@
+.pseudo{
+    height: 25px;
+    width: 150px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.pseudo:hover{
+    height: 50px;
+    width: 200px;
+    background-color: lightgreen;
+}
+.pseudo:active{
+    height: 30px;
+    width: 160px;
+    background-color: lightcoral;
+}
